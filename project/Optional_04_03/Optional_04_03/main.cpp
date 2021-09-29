@@ -14,8 +14,8 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
     //////////////////////////////////////
     // ここから初期化を行うコードを記述する
     //////////////////////////////////////
-    
     // step-1 スケルトンデータをロードして、モデルと関連付けする
+    
 
     // step-2 アニメーションクリップをロードする。
 
