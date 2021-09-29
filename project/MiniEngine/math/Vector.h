@@ -806,6 +806,16 @@ public:
 		*this *= addRot;
 	}
 	/// <summary>
+	/// X軸周りの回転を加算。
+	/// </summary>
+	/// <param name="angle">加算する回転角度。ラジアン単位。</param>
+	void AddRotationX(float angle)
+	{
+		Quaternion addRot;
+		addRot.SetRotation(Vector3::AxisX, angle);
+		*this *= addRot;
+	}
+	/// <summary>
 	/// クォータニオン同士の乗算
 	/// </summary>
 	/// <param name="rot"></param>

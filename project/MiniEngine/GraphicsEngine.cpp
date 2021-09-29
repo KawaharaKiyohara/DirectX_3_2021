@@ -500,7 +500,7 @@ void GraphicsEngine::EndRender()
 	m_swapChain->Present(0, 0);
 #else
 	// Present the frame.
-	m_swapChain->Present(1, 0);
+	m_swapChain->Present(2, 0);
 #endif
 	m_directXTKGfxMemroy->GarbageCollect();
 	//描画完了待ち。

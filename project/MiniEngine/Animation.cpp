@@ -167,8 +167,7 @@ void Animation::UpdateGlobalPose()
 		m_skeleton->SetBoneLocalMatrix(
 			boneNo,
 			boneMatrix
-		);			
-			
+		);				
 	}
 		
 	//最終アニメーション以外は補間完了していたら除去していく。
