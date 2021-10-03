@@ -144,8 +144,6 @@ bone->SetLocalMatrix(boneMatrix);
 &emsp;この図の場合、ツボのワールド座標は下記の計算で求まります。</br>
 ツボのワールド座標 = リンクのワールド座標＋ツボのローカル座標 = (５,９,７)</br>
 &emsp;では、これを行列で考えてみましょう。行列は行列同士の乗算を行うことで、行列を合成することができました。上の図では、リンクのワールド行列(ワールド空間で5,4,7、平行移動する行列とツボのローカル行列(親の座標系で0,5,0、平行移動する行列)を乗算すると、(5,9,7)となり、平行移動する行列が求まります。いかがでしょうか、先ほど計算した、ツボのワールド座標と同じになりましたね。ボーンのワールド行列を求めるときの式は、親から子に向かって行列を乗算することで、このような計算を行っていたのです。</br>
-<!-- 改ページ. -->
-<div style="page-break-before:always"></div>
 
 ## 評価テスト4-1
 次の評価テストを行いなさい。</br>
@@ -294,8 +292,6 @@ animation.Progress(1.0f / 60.0f);
 skeleton.Update(model.GetWorldMatrix());
 model.Draw(renderContext);
 ```
-<!-- 改ページ. -->
-<div style="page-break-before:always"></div>
 
 ## 評価テスト4-2
 次の評価テストを行いなさい。</br>
@@ -375,6 +371,11 @@ m += g_boneMatrix[ vsIn.skinIndex[3] ] * (1.0f - weightTotal);
 &emsp;このプログラムは、モデルの頂点に関連付けられている、ボーン行列を重み付きで合成していって、最終的なワールド行列を求めているプログラムです。入力出来たら実行してみてください。図Opt4.8のようにユニティちゃんが表示されれば完成です。</br>
 ![図Opt4.8](fig/Opt4.8.png)</br>
 
+
 ## 評価テスト4-3
 次の評価テストを行いなさい。</br>
 [評価テストへジャンプ](https://docs.google.com/forms/d/e/1FAIpQLSerL1mpFjYMr4YJ1huRkacbnWibgzgpryEb5XHl8Djea7Bccw/viewform?usp=sf_link)
+
+<!-- . -->
+<div style="page-break-before:always"></div>
+
