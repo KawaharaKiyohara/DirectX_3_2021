@@ -113,6 +113,13 @@ m_commandList->DrawIndexedInstanced(
 3. 頂点シェーダーでインスタンスのIDを利用して、適切な座標変換を行う。(シェーダー側)
 &emsp;では、この３点を意識しながら、インスタンシング描画を実装してきましょう。
 
+## 評価テスト5-1
+次の評価テストを行いなさい。</br>
+[評価テストへジャンプ](https://docs.google.com/forms/d/e/1FAIpQLSfQDFnZIjSkN1zycsBaap3u31mulP5mddTLcgwRPitYuPAGrg/viewform?usp=sf_link)
+
+<!-- 改ページ. -->
+<div style="page-break-before:always"></div>
+
 ### Opt 5.2.1 【ハンズオン】大量のオブジェクトをインスタンシング描画で表示する。
 &emsp;4.1.1と同様のモデルを、今度はインスタンシング描画で500体表示してみます。4.1.1のプログラムとの差異を意識して実装してきましょう。では、Optional_04_02/Optional_04_02.slnを立ち上げてください。
 
