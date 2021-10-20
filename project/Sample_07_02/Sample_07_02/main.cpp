@@ -60,20 +60,12 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
     light.directionalLight[0].color.y = 3.0f;
     light.directionalLight[0].color.z = 3.0f;
 
-    light.directionalLight[0].direction.x = 2.0f;
-    light.directionalLight[0].direction.y = -1.0f;
-    light.directionalLight[0].direction.z = 3.0f;
+    light.directionalLight[0].direction.x = 1.0f;
+    light.directionalLight[0].direction.y = 0.0f;
+    light.directionalLight[0].direction.z = 0.0f;
     light.directionalLight[0].direction.Normalize();
 
-    // 地面からの照り返し
-    light.directionalLight[1].color.x = 1.5f;
-    light.directionalLight[1].color.y = 1.5f;
-    light.directionalLight[1].color.z = 1.5f;
-
-    light.directionalLight[1].direction.x = 0.0f;
-    light.directionalLight[1].direction.y = 0.0f;
-    light.directionalLight[1].direction.z = -1.0f;
-    light.directionalLight[1].direction.Normalize();
+  
 
     light.ambinetLight.x = 0.4f;
     light.ambinetLight.y = 0.4f;
